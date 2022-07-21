@@ -109,18 +109,25 @@ nav{
 
 /*TEXTO :3*/
 
-#seccion-texto{
+.seccion-texto{
     display: flex;
-    padding-left: 1.3em;
-    padding-top: 4em;
-    padding-bottom: 4em;
-    padding-right: 1.3em;
+    padding-left: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 1em;
+    font-family: 'Marcellus', serif;
+    font-size: 0.9em;
+    width: 800px   ;
 }
 
 .texto{
     flex-basis: 70%;
-    width: 50px;
+    margin-right: 1.5em;
 }
 .imagen{
     flex-basis: 30%;
+    align-items: center;
+    padding-top: 3em;
+    padding-left: 2em;
+    text-align: center;
 }
