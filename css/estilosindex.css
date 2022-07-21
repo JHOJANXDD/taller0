@@ -24,3 +24,38 @@ body{
   h1,h2,h3,h4,h5{
     font-family: 'Marcellus', serif;
 }
+
+/*BARRITA*/
+nav{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: var(--negro2);
+    font-family: 'Marcellus', serif;
+    padding: 1rem;
+    font-size: 1.3em;
+}
+
+.item{
+    padding: 1rem;
+}
+.menu a{
+    color: var(--blanco);
+    text-decoration: none;
+}
+.navbar-button{
+    background-color: var(--azuloscuro);
+    padding: 0.5rem;
+    color: var(--blanco);
+    border-radius: 5px;
+    font-family: 'Marcellus', serif;
+    font-size: 1em;
+}
+
+.menu i{
+    margin-right: 0.5rem;
+}
+
+logo.img{
+    
+}
