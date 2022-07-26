@@ -25,7 +25,94 @@ body{
     font-family: 'Marcellus', serif;
 }
 
-/*BARRITA*/
+.nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--negro2);
+}
+
+.logo img{
+    width: 40%;
+    max-width: 200px;
+}
+
+.logo i{
+    color: var(--blanco);
+    font-size: 2rem;
+}
+.menu{
+    background-color: rgba(1, 10, 52, 0.838);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.menu hr{
+    width: 90%;
+    background-color: var(--blanco);
+}
+.item{
+    padding: 1rem;
+}
+nav a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-family: 'Marcellus', serif;
+    text-align: center;
+    font-size: 1.3rem;
+}
+ 
+nav a:hover{
+    background-color: #0B3560;
+    width: 100%;
+}
+.navbar-button{
+    background-color: transparent;
+    padding: 0.5rem;
+    border: none;
+    color: var(--blanco);
+    border-radius: 3px;
+    font-family: 'Marcellus', serif;
+    font-size: 1em;
+    cursor: pointer;
+}
+@media screen and (min-width: 1024px){
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--negro2);
+    }
+    .menu{
+        background-color: var(--negro2);
+        display: block;
+    }
+    .logo i{
+        display: none;
+    }
+   .logo img{
+    width: 100%;
+   }
+    .menu-hr{
+        display: none;
+    }
+    .navbar-button{
+        background-color: var(--azuloscuro);
+    }
+}
+/*BARRITA
 nav{
     display: flex;
     align-content: center;
@@ -65,7 +152,7 @@ nav{
     padding-top: 1rem;
 }
  
-/*SECCION :3*/
+/*SECCION :3
 .features-title{
     background-color: rgba(0,0,0,0.35);
     text-align: center;
@@ -107,7 +194,7 @@ nav{
     background-color: rgba(0,0,0,0.59);
 }   
 
-/*TEXTO :3*/
+/*TEXTO :3
 
 .seccion-texto{
     display: flex;
@@ -131,3 +218,4 @@ nav{
     padding-left: 2em;
     text-align: center;
 }
+*/
