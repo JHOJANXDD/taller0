@@ -44,46 +44,6 @@ h5 {
             "footer" auto
     }
 
-@media screen and (min-width:1024px) {
-nav{
-    background-color: var(--negro2);
-    grid-template-columns: 200px;
-    grid-template-areas: "logo";
-}
-.menu{
-    display: block;
-    background-color: var(--negro2);
-    justify-self: end;
-    align-self: center;
-    padding: 0 1rem;
-}
-.menu-hr{
-    display: none;
-}
-.navbar-button{
-    background-color: var(--azuloscuro);
-    align-self: center;
-}
-.logo img{
-    width: 100%;
-}
-.logo i{
-    display: none;
-}
-.item{
-    margin: 0 1rem;
-    align-self: center;
-}
-nav a{
-    text-align: left;
-}
-nav a:hover{
-    background-color: transparent;
-    color: var(--azuloscuro);
-}
-
-}
-
 /*Resolución tabletas*/
 @media screen and (min-width:768px) {
    
@@ -176,3 +136,54 @@ nav a:hover {
     margin-top: 60px;
     min-height: 400px;
 }
+
+/*Resolución tabletas*/
+@media screen and (min-width:769px) {
+  nav{
+  background-color: var(--negro2);
+  grid-template-columns: 200px auto;
+  grid-template-areas: 
+  "logo menu";
+}
+
+.logo img{
+  width: 100%;
+}
+.logo i{
+  display: none;
+}
+
+.menu{
+  background-color: var(--negro2);
+  display: grid ;
+  grid-template-columns: auto auto auto auto;
+  justify-self: end;
+  align-self: center;
+  padding: 0 1rem;
+}
+
+.menu-hr{
+  display: none;
+}
+
+.item {
+  margin: 0 1rem;
+  align-self: center;
+}
+
+nav a {
+  text-align: left;
+}
+
+nav a:hover {
+  background-color: transparent;
+  color: var(--azuloscuro);
+}
+
+.navbar-button {
+  background-color: var(--azuloscuro);
+  align-self: center;
+}
+   
+}
+

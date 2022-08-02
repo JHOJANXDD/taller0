@@ -112,7 +112,7 @@ nav a:hover{
         background-color: var(--azuloscuro);
     }
 }
-/*BARRITA
+/*BARRITA*/
 nav{
     display: flex;
     align-content: center;
@@ -152,7 +152,7 @@ nav{
     padding-top: 1rem;
 }
  
-/*SECCION :3
+/*SECCION :3*/
 .features-title{
     background-color: rgba(0,0,0,0.35);
     text-align: center;
@@ -194,7 +194,7 @@ nav{
     background-color: rgba(0,0,0,0.59);
 }   
 
-/*TEXTO :3
+/*TEXTO :3*/
 
 .seccion-texto{
     display: flex;
@@ -218,4 +218,3 @@ nav{
     padding-left: 2em;
     text-align: center;
 }
-*/
