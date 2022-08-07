@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import
+url(&#39;https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap&#39;);
 :root{
+    
   --azulclaro: #48D6ED;
   --azuloscuro: #337AB7;
   --azulnegro: #303342;
@@ -12,7 +14,7 @@
   --blanco: #fff;
   --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
 }
- 
+
 *{
     margin:0;
 }
@@ -20,12 +22,13 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
- 
-  h1,h2,h3,h4,h5{
+    h1,h2,h3,h4,h5{
     font-family: 'Marcellus', serif;
 }
 
-.nav{
+/*mobile first*/
+
+nav{
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -33,126 +36,88 @@ body{
 }
 
 .logo{
+    background-color: var(--negro2);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background-color: var(--negro2);
-}
-
-.logo img{
-    width: 40%;
-    max-width: 200px;
 }
 
 .logo i{
     color: var(--blanco);
     font-size: 2rem;
 }
+
+.logo img{
+    width: 40%;
+    max-width: 180px;
+    height: 3rem;
+}
+
 .menu{
+    
     background-color: rgba(1, 10, 52, 0.838);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    display: none;
+    justify-content: center;
 }
 
-.menu hr{
+.menu-hr{
     width: 90%;
     background-color: var(--blanco);
 }
+
 .item{
     padding: 1rem;
 }
+
 nav a{
     color: var(--blanco);
     text-decoration: none;
-    font-family: 'Marcellus', serif;
     text-align: center;
-    font-size: 1.3rem;
-}
- 
-nav a:hover{
-    background-color: #0B3560;
-    width: 100%;
-}
-.navbar-button{
-    background-color: transparent;
-    padding: 0.5rem;
-    border: none;
+    font-family: 'Marcellus', serif;
     color: var(--blanco);
-    border-radius: 3px;
-    font-family: 'Marcellus', serif;
-    font-size: 1em;
-    cursor: pointer;
-}
-@media screen and (min-width: 1024px){
-    nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: var(--negro2);
-    }
-    .menu{
-        background-color: var(--negro2);
-        display: block;
-    }
-    .logo i{
-        display: none;
-    }
-   .logo img{
-    width: 100%;
-   }
-    .menu-hr{
-        display: none;
-    }
-    .navbar-button{
-        background-color: var(--azuloscuro);
-    }
-}
-/*BARRITA*/
-nav{
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-    background-color: var(--negro2);
-    font-family: 'Marcellus', serif;
-    padding: 1rem;
     font-size: 1.3em;
 }
 
-.item{
-    padding: 1rem;
+nav a:hover{
+    background-color: #0B3860;
+    width: 100%;
 }
-.menu a{
-    color: var(--blanco);
-    text-decoration: none;
-}
+
 .navbar-button{
-    background-color: var(--azuloscuro);
-    padding: 0.5rem;
-    color: var(--blanco);
-    border-radius: 5px;
-    font-family: 'Marcellus', serif;
+    background-color:transparent;
+    border: none;
+    border-radius: 3px;
     font-size: 1em;
+    padding: 0.5rem;
+    font-family: "Marcellus", serif;
+    color: var(--blanco);
 }
 
-.menu i{
-    margin-right: 0.5rem;
+#nosotros{
+    display: flex;
 }
 
-.logo img{
-    height: 3rem;
+.texto{
+    width: 60%;
+    padding: 80px;
+    font-size: 1.2em;
 }
+.imagen{
+    padding: 40px;
+    display: flex;
+    float: right;
+    height: 250px;
+}
+
 #features{
     background: url(../img/index/bg-features.png);
     color: white;
     padding-top: 1rem;
 }
- 
-/*SECCION :3*/
+
 .features-title{
     background-color: rgba(0,0,0,0.35);
     text-align: center;
@@ -164,8 +129,6 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 
 .feature{
@@ -180,41 +143,67 @@ nav{
     align-items: center;
     border-radius: 5px;
 }
- 
+
 .feature i{
-    font-size: 2.6em;
+    font-size: 2.2em;
     margin-bottom: 1.5rem;
 }
 
 .feature-blue{
     background-color: #00325eae;
 }
- 
+
 .feature-black{
     background-color: rgba(0,0,0,0.59);
-}   
-
-/*TEXTO :3*/
-
-.seccion-texto{
-    display: flex;
-    padding-left: 3em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding-right: 1em;
-    font-family: 'Marcellus', serif;
-    font-size: 0.9em;
-    width: 800px   ;
 }
 
-.texto{
-    flex-basis: 70%;
-    margin-right: 1.5em;
+.item{
+    padding: 1rem;
 }
-.imagen{
-    flex-basis: 30%;
-    align-items: center;
-    padding-top: 3em;
-    padding-left: 2em;
-    text-align: center;
+
+/*Resolución tablet*/
+@media screen and (min-width: 768px){
+.logo{
+    background-color: red;
+}
+}
+
+/*Resolución notebooks*/
+@media screen and (min-width: 1024px){
+    nav{
+        display: flex;
+        flex-direction: row; 
+        width: 100%;
+        justify-content: space-between;
+        background-color: var(--negro2);
+    }
+    
+    .logo{
+        padding: 1rem;
+    }
+    .logo img{
+        width: 100%;
+        max-width: 180px;
+    }
+    
+    .logo i{
+        display: none;
+    }
+    .menu{
+        background-color: var(--negro2);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu-hr{
+        display: none;
+    }
+    .navbar-button{
+         background-color:var(--azuloscuro);
+        }
+    }
+
+    /*Resolución notebooks*/
+@media screen and (min-width: 1308px){
 }
